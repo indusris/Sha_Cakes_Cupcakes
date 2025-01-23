@@ -1,0 +1,222 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navigation */
+nav {
+    background-color: #007BFF;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #FFD700;
+}
+
+/* Headings */
+h1 {
+    color: #007BFF;
+    margin: 20px 0;
+}
+
+h2 {
+    color: #333;
+    margin: 15px 0;
+}
+
+/* Paragraphs */
+p {
+    margin: 10px 0;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Buttons */
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Forms */
+form {
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+}
+
+/* Product List */
+.product-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.product {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: left;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product h2 {
+    margin-top: 0;
+    color: #007BFF;
+}
+
+.product p {
+    margin: 5px 0;
+    color: #555;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+.product img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    display: block;
+}
+
+.search-container {
+    margin: 20px auto;
+    text-align: center;
+}
+
+#searchBar {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#searchBar:focus {
+    outline: none;
+    border-color: #007BFF;
+}
+
+/* Header and Banner */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Banner Styles */
+.banner {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+    background-color: #f4f4f4;
+}
+
+.banner img {
+    width: 100%; /* Makes the banner image responsive */
+    height: auto;
+    max-height: 300px; /* Optional: Limit banner height */
+    object-fit: cover; /* Ensures the image scales nicely */
+    border-radius: 5px;
+}
+
+.banner h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for readability */
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 2.5em;
+}
+
+.banner p {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #555;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Cakes and Cupcakes</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script>
+        // JavaScript to filter products based on search input
+        function searchProducts() {
+            const input = document.getElementById('searchBar').value.toLowerCase();
+            const products = document.querySelectorAll('.product');
+
+            products.forEach(product => {
+                const productName = product.querySelector('h2').innerText.toLowerCase();
+                const productDescription = product.querySelector('p').innerText.toLowerCase();
+
+                if (productName.includes(input) || productDescription.includes(input)) {
+                    product.style.display = "block";
+                } else {
+                    product.style.display = "none";
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Our Delicious Cakes and Cupcakes</h1>
+    <p>Choose from our wide range of freshly baked cakes and cupcakes:</p>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input
+            type="text"
+            id="searchBar"
+            placeholder="Search for products..."
+            onkeyup="searchProducts()"
+        >
+    </div>
+
+    <!-- Products Section -->
+    <div class="product-list">
+        <!-- Product 1 -->
+        <div class="product">
+            <img src="/static/images/chocolate_cake.jpg" alt="Chocolate Cake">
+            <h2>Chocolate Cake</h2>
+            <p>Rich and creamy chocolate cake.</p>
+            <p>Price: €30</p>
+        </div>
+        <!-- Product 2 -->
+        <div class="product">
+            <img src="/static/images/vanilla_cupcakes.jpg" alt="Vanilla Cupcakes">
+            <h2>Vanilla Cupcakes</h2>
+            <p>Classic vanilla cupcakes with frosting.</p>
+            <p>Price: €15 (Pack of 6)</p>
+        </div>
+        <!-- Product 3 -->
+        <div class="product">
+            <img src="/static/images/red_velvet_cake.jpg" alt="Red Velvet Cake">
+            <h2>Red Velvet Cake</h2>
+            <p>Elegant red velvet cake with cream cheese frosting.</p>
+            <p>Price: €40</p>
+        </div>
+        <!-- Product 4 -->
+        <div class="product">
+            <img src="/static/images/lemon_cupcakes.jpg" alt="Lemon Cupcakes">
+            <h2>Lemon Cupcakes</h2>
+            <p>Zesty lemon cupcakes for a refreshing treat.</p>
+            <p>Price: €18 (Pack of 6)</p>
+        </div>
+        <!-- Product 5 -->
+        <div class="product">
+            <img src="/static/images/black_forest_cake.jpg" alt="Black Forest Cake">
+            <h2>Black Forest Cake</h2>
+            <p>Decadent cake layered with cherries and chocolate.</p>
+            <p>Price: €35</p>
+        </div>
+        <!-- Product 6 -->
+        <div class="product">
+            <img src="/static/images/strawberry_cupcakes.jpg" alt="Strawberry Cupcakes">
+            <h2>Strawberry Cupcakes</h2>
+            <p>Fluffy strawberry cupcakes with whipped cream.</p>
+            <p>Price: €20 (Pack of 6)</p>
+        </div>
+        <!-- Product 7 -->
+        <div class="product">
+            <img src="/static/images/caramel_cake.jpg" alt="Caramel Cake">
+            <h2>Caramel Cake</h2>
+            <p>Soft cake topped with rich caramel sauce.</p>
+            <p>Price: €32</p>
+        </div>
+        <!-- Product 8 -->
+        <div class="product">
+            <img src="/static/images/blueberry_cupcakes.jpg" alt="Blueberry Cupcakes">
+            <h2>Blueberry Cupcakes</h2>
+            <p>Delightful blueberry cupcakes with glaze.</p>
+            <p>Price: €22 (Pack of 6)</p>
+        </div>
+        <!-- Product 9 -->
+        <div class="product">
+            <img src="/static/images/coffee_cake.jpg" alt="Coffee Cake">
+            <h2>Coffee Cake</h2>
+            <p>Moist cake with a rich coffee flavor.</p>
+            <p>Price: €28</p>
+        </div>
+        <!-- Product 10 -->
+        <div class="product">
+            <img src="/static/images/rainbow_cupcakes.jpg" alt="Rainbow Cupcakes">
+            <h2>Rainbow Cupcakes</h2>
+            <p>Vibrant cupcakes with rainbow frosting.</p>
+            <p>Price: €25 (Pack of 6)</p>
+        </div>
+    </div>
+
+    <a href="/">Home</a> | <a href="/about">About Us</a> | <a href="/contact">Contact</a>
+</body>
+</html>
