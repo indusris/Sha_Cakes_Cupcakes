@@ -219,4 +219,42 @@ header {
     font-size: 1.2em;
 }
 
+/* Header Banner */
+.header-banner {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: #f8f9fa; /* Fallback color */
+}
+
+.header-banner img {
+    width: 100%;
+    height: auto;
+    max-height: 300px; /* Optional: Limit banner height */
+    object-fit: cover;
+}
+
+.header-banner .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent background for readability */
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.header-banner .banner-text h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.header-banner .banner-text p {
+    font-size: 1.2em;
+    margin: 5px 0 0;
+}
+
+
 
