@@ -4,7 +4,8 @@
 
 {% block content %}
 <div class="container text-center mt-5">
-
+    <h1>Our Delicious Cakes and Cupcakes</h1>
+    <p>Choose from our wide range of freshly baked cakes and cupcakes:</p>
 
     <!-- Search Bar -->
     <div class="search-container mb-4">
@@ -25,6 +26,11 @@
             <h2>Chocolate Cake</h2>
             <p>Rich and creamy chocolate cake.</p>
             <p>Price: €30</p>
+            <form action="/add-to-cart" method="POST">
+                <input type="hidden" name="product_name" value="Chocolate Cake">
+                <input type="hidden" name="product_price" value="30">
+                <button type="submit" class="btn btn-primary">Add to Cart</button>
+            </form>
         </div>
         <!-- Product 2 -->
         <div class="col-md-4 mb-4 product">
@@ -32,6 +38,11 @@
             <h2>Vanilla Cupcakes</h2>
             <p>Classic vanilla cupcakes with frosting.</p>
             <p>Price: €15 (Pack of 6)</p>
+            <form action="/add-to-cart" method="POST">
+                <input type="hidden" name="product_name" value="Vanilla Cupcakes">
+                <input type="hidden" name="product_price" value="15">
+                <button type="submit" class="btn btn-primary">Add to Cart</button>
+            </form>
         </div>
         <!-- Product 3 -->
         <div class="col-md-4 mb-4 product">
@@ -39,6 +50,11 @@
             <h2>Red Velvet Cake</h2>
             <p>Elegant red velvet cake with cream cheese frosting.</p>
             <p>Price: €40</p>
+            <form action="/add-to-cart" method="POST">
+                <input type="hidden" name="product_name" value="Red Velvet Cake">
+                <input type="hidden" name="product_price" value="40">
+                <button type="submit" class="btn btn-primary">Add to Cart</button>
+            </form>
         </div>
         <!-- Product 4 -->
         <div class="col-md-4 mb-4 product">
@@ -46,6 +62,11 @@
             <h2>Lemon Cupcakes</h2>
             <p>Zesty lemon cupcakes for a refreshing treat.</p>
             <p>Price: €18 (Pack of 6)</p>
+            <form action="/add-to-cart" method="POST">
+                <input type="hidden" name="product_name" value="Lemon Cupcakes">
+                <input type="hidden" name="product_price" value="18">
+                <button type="submit" class="btn btn-primary">Add to Cart</button>
+            </form>
         </div>
         <!-- Product 5 -->
         <div class="col-md-4 mb-4 product">
@@ -53,6 +74,11 @@
             <h2>Black Forest Cake</h2>
             <p>Decadent cake layered with cherries and chocolate.</p>
             <p>Price: €35</p>
+            <form action="/add-to-cart" method="POST">
+                <input type="hidden" name="product_name" value="Black Forest Cake">
+                <input type="hidden" name="product_price" value="35">
+                <button type="submit" class="btn btn-primary">Add to Cart</button>
+            </form>
         </div>
         <!-- Product 6 -->
         <div class="col-md-4 mb-4 product">
@@ -60,6 +86,11 @@
             <h2>Strawberry Cupcakes</h2>
             <p>Fluffy strawberry cupcakes with whipped cream.</p>
             <p>Price: €20 (Pack of 6)</p>
+            <form action="/add-to-cart" method="POST">
+                <input type="hidden" name="product_name" value="Strawberry Cupcakes">
+                <input type="hidden" name="product_price" value="20">
+                <button type="submit" class="btn btn-primary">Add to Cart</button>
+            </form>
         </div>
         <!-- Product 7 -->
         <div class="col-md-4 mb-4 product">
@@ -67,6 +98,11 @@
             <h2>Caramel Cake</h2>
             <p>Soft cake topped with rich caramel sauce.</p>
             <p>Price: €32</p>
+            <form action="/add-to-cart" method="POST">
+                <input type="hidden" name="product_name" value="Caramel Cake">
+                <input type="hidden" name="product_price" value="32">
+                <button type="submit" class="btn btn-primary">Add to Cart</button>
+            </form>
         </div>
         <!-- Product 8 -->
         <div class="col-md-4 mb-4 product">
@@ -74,6 +110,11 @@
             <h2>Blueberry Cupcakes</h2>
             <p>Delightful blueberry cupcakes with glaze.</p>
             <p>Price: €22 (Pack of 6)</p>
+            <form action="/add-to-cart" method="POST">
+                <input type="hidden" name="product_name" value="Blueberry Cupcakes">
+                <input type="hidden" name="product_price" value="22">
+                <button type="submit" class="btn btn-primary">Add to Cart</button>
+            </form>
         </div>
         <!-- Product 9 -->
         <div class="col-md-4 mb-4 product">
@@ -81,6 +122,11 @@
             <h2>Coffee Cake</h2>
             <p>Moist cake with a rich coffee flavor.</p>
             <p>Price: €28</p>
+            <form action="/add-to-cart" method="POST">
+                <input type="hidden" name="product_name" value="Coffee Cake">
+                <input type="hidden" name="product_price" value="28">
+                <button type="submit" class="btn btn-primary">Add to Cart</button>
+            </form>
         </div>
         <!-- Product 10 -->
         <div class="col-md-4 mb-4 product">
@@ -88,6 +134,11 @@
             <h2>Rainbow Cupcakes</h2>
             <p>Vibrant cupcakes with rainbow frosting.</p>
             <p>Price: €25 (Pack of 6)</p>
+            <form action="/add-to-cart" method="POST">
+                <input type="hidden" name="product_name" value="Rainbow Cupcakes">
+                <input type="hidden" name="product_price" value="25">
+                <button type="submit" class="btn btn-primary">Add to Cart</button>
+            </form>
         </div>
     </div>
 </div>
